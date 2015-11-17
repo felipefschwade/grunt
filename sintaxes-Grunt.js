@@ -1,6 +1,9 @@
+npm init -> npm install grunt --save-dev -> npm install grunt-cli -g ->
+
+
 Para iniciar o grunt:
 module.exports = function(grunt){
-    grunt.initCongi({
+    grunt.initConfig({
         plugin1: {config},
         plugin2: {config}
     });
@@ -9,7 +12,7 @@ Para carregar outras NPms :
 Para utilizar a task e a target no terminal: grunt task:target
 Utilizando o Copy:
     module.exports = function(grunt){
-    grunt.initCongi({
+    grunt.initConfig({
         copy:{
             pasta:{
                 expand: true,
@@ -27,7 +30,7 @@ Utilizando o Copy:
         grunt.loadNpmTasks('grunt-contri-copy');
 Utilizando o Clean:
         module.exports = function(grunt){
-            grunt.initCongi({
+            grunt.initConfig({
                 copy:{
                     pasta:{
                         expand: true,
